@@ -649,6 +649,23 @@
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
   <script defer
     src="https://customercore.jp/wp-content/cache/autoptimize/js/autoptimize_87e7aae0910e6fe6bcd0ab353de11d5e.js"></script>
+      <script>
+
+        // ハンバーガーメニュー //
+        $(function () {
+          $('.menu').on('click', function () {
+            $(this).toggleClass('active');
+            $("#nav").toggleClass('active');
+          })
+        })
+        $(function () {
+          $('#nav a').on('click', function () {
+            $('#nav').toggleClass('active');
+            $(".menu").toggleClass('active');
+          })
+        });
+
+      </script>
 </body>
 
 </html>

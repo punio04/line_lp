@@ -18017,6 +18017,11 @@ header nav li:not(.h-btn) a:before {
     align-items: center;
     width: 282px;
   }
+
+  .scroll header .site-logo,
+  body.sH header .site-logo {
+    width: 160px;
+  }
 }
 
 html {
