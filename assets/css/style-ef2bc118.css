@@ -17827,7 +17827,7 @@ p {
   .cv_btn01 a,
   .cv_btn02 a {
     padding: 22px 55px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 94px;
   }
 
@@ -18020,10 +18020,20 @@ header nav li:not(.h-btn) a:before {
 
   .scroll header .site-logo,
   body.sH header .site-logo {
-    width: 160px;
+    width: 150px;
   }
 }
 
 html {
   scroll-behavior: smooth !important;
+}
+
+header .site-logo {
+  width: 150px;
+}
+
+@media screen and (max-width: 1023px) {
+  header .site-logo {
+    width: 150px!important;
+  }
 }
